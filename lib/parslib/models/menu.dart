@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
+import 'package:pet_fit/pages/add_pet/categorySelect.dart';
 import 'package:pet_fit/pages/chat/chat_screen.dart';
 import 'package:pet_fit/pages/home/entryPoint/entry_point.dart';
 import 'package:pet_fit/pages/home/home_screen.dart';
@@ -35,7 +36,9 @@ List<Menu> sidebarMenus = [
         src: "assets/RiveAssets/icons.riv",
         artboard: "LIKE/STAR",
         stateMachineName: "STAR_Interactivity"),
-    onTap: () {},
+    onTap: (BuildContext context) {
+      Navigator.pushNamed(context, CategorySelectScreen.routeName);
+    },
   ),
   Menu(
     title: "Yardım",

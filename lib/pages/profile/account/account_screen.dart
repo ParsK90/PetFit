@@ -36,17 +36,17 @@ class AccountScreen extends StatelessWidget {
                 Row(
                   children: [
                     const Text(
-                      'İlan Sayısı: 10',
+                      'Evcil Hayvan Sayısı: 3',
                       style: TextStyle(fontSize: 16.0),
                     ),
-                    const Spacer(),
-                    SvgPicture.asset("assets/icons/Star Icon.svg"),
-                    const SizedBox(width: 8.0),
-                    const Text(
-                      'Rating: 4.5',
-                      style: TextStyle(fontSize: 16.0),
-                    ),
-                    const SizedBox(width: 16.0),
+                    // const Spacer(),
+                    // SvgPicture.asset("assets/icons/Star Icon.svg"),
+                    // const SizedBox(width: 8.0),
+                    // const Text(
+                    //   'Rating: 4.5',
+                    //   style: TextStyle(fontSize: 16.0),
+                    // ),
+                    // const SizedBox(width: 16.0),
                   ],
                 ),
               ],
@@ -54,7 +54,7 @@ class AccountScreen extends StatelessWidget {
           ),
           // const Divider(),
           const Text(
-            "İlanlarım",
+            "Aileniz",
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           ),
           const SizedBox(
@@ -79,7 +79,7 @@ class AccountScreen extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Image.asset(
-                          "assets/demo/asusrog.jpeg",
+                          "assets/demo/luna.jpg",
                         ),
                         const Padding(
                           padding: EdgeInsets.all(8.0),
@@ -87,22 +87,11 @@ class AccountScreen extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                'Asus Rog Gaming Laptop',
+                                'Luna',
                                 style: TextStyle(
                                     fontSize: 16.0,
                                     fontWeight: FontWeight.bold),
                                 textAlign: TextAlign.center,
-                              ),
-                              Divider(
-                                height: 2,
-                              ),
-                              SizedBox(height: 8.0),
-                              Divider(
-                                height: 2,
-                              ),
-                              Text(
-                                "RAKABETTE ÖNE GEÇ!Odaklanmış...",
-                                style: TextStyle(fontSize: 14.0),
                               ),
                             ],
                           ),
@@ -115,7 +104,7 @@ class AccountScreen extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Image.asset(
-                          "assets/demo/jbl.jpg",
+                          "assets/demo/gofret.jpg",
                         ),
                         const Padding(
                           padding: EdgeInsets.all(8.0),
@@ -123,22 +112,11 @@ class AccountScreen extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                'Jbl Kulaklık',
+                                'Gofret',
                                 style: TextStyle(
                                     fontSize: 16.0,
                                     fontWeight: FontWeight.bold),
                                 textAlign: TextAlign.center,
-                              ),
-                              Divider(
-                                height: 2,
-                              ),
-                              SizedBox(height: 8.0),
-                              Divider(
-                                height: 2,
-                              ),
-                              Text(
-                                "Güçlü JBL Pure Bass Sound ile JBL W100TWS kulaklık...",
-                                style: TextStyle(fontSize: 14.0),
                               ),
                             ],
                           ),

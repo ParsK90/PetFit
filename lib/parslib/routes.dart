@@ -1,4 +1,7 @@
 import 'package:flutter/widgets.dart';
+import 'package:pet_fit/pages/add_pet/add_pet_screen.dart';
+import 'package:pet_fit/pages/add_pet/add_photo_screen.dart';
+import 'package:pet_fit/pages/add_pet/categorySelect.dart';
 import 'package:pet_fit/pages/chat/chat_screen.dart';
 import 'package:pet_fit/pages/complete_profile/complete_profile_screen.dart';
 import 'package:pet_fit/pages/forgot_password/forgot_password_screen.dart';
@@ -31,4 +34,7 @@ final Map<String, WidgetBuilder> routes = {
   SettingsScreen.routeName: (context) => const SettingsScreen(),
   AccountScreen.routeName: (context) => const AccountScreen(),
   NotificationScreen.routeName: (context) => const NotificationScreen(),
+  AddPhotoPetScreen.routeName: (context) => const AddPhotoPetScreen(),
+  CategorySelectScreen.routeName: (context) => const CategorySelectScreen(),
+  AddPetScreen.routeName: (context) => const AddPetScreen(),
 };

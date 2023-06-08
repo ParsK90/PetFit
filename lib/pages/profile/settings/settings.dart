@@ -9,11 +9,11 @@ class SettingsScreen extends StatefulWidget {
 }
 
 class _SettingsScreenState extends State<SettingsScreen> {
-  bool _showPhoneNumber = false;
-  bool _receiveEmails = false;
-  bool _receiveSMS = false;
-  bool _receiveWhatsApp = false;
-  bool _receivePhoneCalls = false;
+  bool _beslenmeBildirim = false;
+  bool _beslenmeAlarm = false;
+  bool _temizlik = false;
+  bool _saglikKontrol = false;
+  bool _dogumGunu = false;
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +34,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           children: [
             const SizedBox(height: 20),
             const Text(
-              "Gizlilik Seçenekleri",
+              "Bildirim Seçenekleri",
               style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.w400,
@@ -46,18 +46,18 @@ class _SettingsScreenState extends State<SettingsScreen> {
             ),
             SwitchListTile(
               title: const Text(
-                'Telefon Numaramı İlanlarda Göster',
+                'Beslenme vakitlerinide bana bildir',
               ),
-              value: _showPhoneNumber,
+              value: _beslenmeBildirim,
               onChanged: (bool value) {
                 setState(() {
-                  _showPhoneNumber = value;
+                  _beslenmeBildirim = value;
                 });
               },
-              secondary: const Icon(Icons.privacy_tip),
+              secondary: const Icon(Icons.food_bank),
             ),
             const Divider(),
-            const Text("İletişim Seçenekleri",
+            const Text("Alarm Seçenekleri",
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.w400,
@@ -65,44 +65,44 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 )),
             const Divider(),
             SwitchListTile(
-              title: const Text('E-posta Al'),
-              value: _receiveEmails,
+              title: const Text('Beslenme Vakitlerini Bildir'),
+              value: _beslenmeAlarm,
               onChanged: (bool value) {
                 setState(() {
-                  _receiveEmails = value;
+                  _beslenmeAlarm = value;
                 });
               },
-              secondary: const Icon(Icons.email),
+              secondary: const Icon(Icons.food_bank),
             ),
             SwitchListTile(
-              title: const Text('SMS Al'),
-              value: _receiveSMS,
+              title: const Text('Temizlik Vakitlerini Bildir'),
+              value: _temizlik,
               onChanged: (bool value) {
                 setState(() {
-                  _receiveSMS = value;
+                  _temizlik = value;
                 });
               },
-              secondary: const Icon(Icons.sms),
+              secondary: const Icon(Icons.cleaning_services),
             ),
             SwitchListTile(
-              title: const Text('WhatsApp Al'),
-              value: _receiveWhatsApp,
+              title: const Text('Sağlık Kontrollerini Bildir'),
+              value: _saglikKontrol,
               onChanged: (bool value) {
                 setState(() {
-                  _receiveWhatsApp = value;
+                  _saglikKontrol = value;
                 });
               },
               secondary: const Icon(Icons.call),
             ),
             SwitchListTile(
-              title: const Text('Telefon Çağrısı Al'),
-              value: _receivePhoneCalls,
+              title: const Text('Doğum Günlerini Bildir'),
+              value: _dogumGunu,
               onChanged: (bool value) {
                 setState(() {
-                  _receivePhoneCalls = value;
+                  _dogumGunu = value;
                 });
               },
-              secondary: const Icon(Icons.call),
+              secondary: const Icon(Icons.cake),
             ),
           ],
         ),

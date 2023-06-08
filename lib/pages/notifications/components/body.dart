@@ -12,12 +12,12 @@ class _BodyState extends State<Body> {
   Widget build(BuildContext context) {
     // List<String> notifications = [];
     List<String> notifications = [
-      "Listendeki Monster Abra A5 Satıldı",
-      "Listendeki Asus Rog Satıldı",
-      "Favori ilaniniz indirimde",
-      "Merhaba Bu Gün Nasılsınız",
-      "Ali Kullanıcısından Mesajınız Var",
-      "İlanin artışta. Son 12 saate 52 görüntülenme",
+      "Luna için duş vakti.",
+      "Gofret bu sabah beslenemsini sağlamadı mı?",
+      "Esen Türk veterinerinden bir mesajınız var.",
+      "Merhaba Bugün Nasılsınız?",
+      "Kuki için yemek vakti!",
+      "Yarın Luna'nın doğum günü.",
     ];
     return Container(
         child: notifications.isEmpty
