@@ -1,38 +1,38 @@
-# PetFit Flutter Uygulaması
+# PetFit Flutter App
 
 ![PetFit Logo](https://i.hizliresim.com/3ah3f9i.png)
 
-Bu repo, PetFit uygulamasının Flutter ile geliştirilmiş mobil uygulama kısmını içerir. Bu uygulama, evcil hayvan sahiplerinin evcil hayvanlarının sağlık ve bakım bilgilerini takip etmelerine yardımcı olur.
+This repo contains the Flutter-enhanced mobile app portion of the PetFit app. This app helps pet owners keep track of their pet's health and care information.
 
-## Başlarken
+## While starting
 
-Bu proje bir Flutter uygulamasının başlangıç noktasıdır. Eğer bu sizin ilk Flutter projeniz ise, başlamanıza yardımcı olacak birkaç kaynak:
+This project is the starting point of a Flutter application. If this is your first Flutter project, here are a few resources to get you started:
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-Flutter geliştirmeye başlamak için yardım almak adına, çevrimiçi belgelendirmeyi görüntüleyin. Bu belgelendirme, öğreticiler, örnekler, mobil geliştirme hakkında yönlendirmeler ve tam bir API referansı sunar.
+For help getting started with Flutter development, view the online documentation. This documentation provides tutorials, examples, guidance on mobile development, and a full API reference.
 
-## Kurulum
+## Setup
 
-Flutter SDK'nın kurulu olduğundan ve PATH değişkeninize eklenmiş olduğundan emin olun. Daha fazla bilgi için [Flutter kurulum rehberi](https://flutter.dev/docs/get-started/install)ni ziyaret edin.
+Make sure Flutter SDK is installed and added to your PATH variable. Visit [Flutter installation guide](https://flutter.dev/docs/get-started/install) for more information.
 
-## Proje Yapısı
+## Project Structure
 
-Bu Flutter projesi, MVC (Model-View-Controller) tasarım desenini kullanır. 
+This Flutter project uses the MVC (Model-View-Controller) design pattern.
 
-- `lib/models`: Bu dizin, uygulamanın veri modellerini içerir.
-- `lib/views`: Bu dizin, kullanıcı arayüzünün tüm widget'larını içerir.
-- `lib/controllers`: Bu dizin, uygulamanın tüm iş mantığını içerir.
+- `lib/models`: This directory contains the data models of the application.
+- `lib/views`: This directory contains all widgets of the UI.
+- `lib/controllers`: This directory contains all the business logic of the application.
 
-## Servis
+## Service
 
-Bu uygulama, veri işlemleri için bir Web API servisi ile iletişim kurar. Servis, .NET Core ile geliştirilmiştir ve SQL Server veritabanı kullanır. Servis kodunu ve veritabanı şemasını [PetFitServis](https://github.com/ParsK90/PetFitServis) reposunda bulabilirsiniz.
+This application communicates with a Web API service for data operations. The service is developed with .NET Core and uses SQL Server database. You can find the service code and database schema in the [PetFitServis](https://github.com/ParsK90/PetFitServis) repo.
 
-## Katkıda Bulunma
+## Contribute
 
-Bu proje açık kaynaklıdır ve katkılarınızı memnuniyetle karşılarız. Katkıda bulunmadan önce lütfen [Katkıda Bulunma Rehberi](CONTRIBUTING.md)ni okuyun.
+This project is open source and we welcome your contributions. Please read the [Contribution Guide](CONTRIBUTING.md) before making a contribution.
 
-## Lisans
+## Licence
 
-Bu proje MIT lisansı altında lisanslanmıştır. Daha fazla bilgi için [Lisans](LICENSE) dosyasına bakın.
+This project is licensed under the MIT license. See the [License](LICENSE) file for more information.
